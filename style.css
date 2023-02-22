@@ -1,0 +1,218 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+.navbar
+{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.bg-body-tertiary,
+.container-fluid {
+    background-color: rgba(216, 255, 255, 0.637);
+}
+
+.navbar-toggler {
+    background-color: rgb(255, 255, 255);
+}
+
+.content {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+}
+
+.section1 {
+    width: 100%;
+    min-height: 80vh;
+    position: absolute;
+    /* border: 2px solid red; */
+}
+
+.bluebox {
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: 80vw;
+    height: 60vh;
+    background-color: rgba(216, 255, 255, 0.637);
+    z-index: 1;
+}
+
+.welcome {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 50vw;
+    z-index: 2;
+}
+
+.imgbox1 {
+    position: absolute;
+    top: 55vh;
+    right: 3%;
+    background-image: url(./assets/images/fabian-quintero-UWQP2mh5YJI-unsplash.jpg);
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    z-index: 2;
+    border: 5px solid white;
+}
+
+.section2 {
+    position: absolute;
+    width: 100vw;
+    min-height: 110vh;
+    top: 50rem;
+    /* border: 2px solid blue; */
+}
+.section2 .box1 {
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    background-color: rgba(216, 255, 255, 0.637);
+}
+
+.imgbox2 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background-image: url(./assets/images/fabian-quintero-UWQP2mh5YJI-unsplash.jpg);
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    z-index: 2;
+    border: 5px solid white;
+}
+
+.section2 .text {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 20rem;
+    text-align: justify;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    z-index: 2;
+}
+
+.section3 {
+    position: absolute;
+    top:2000px ;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section3 #carousel {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+
+footer {
+    background: rgba(216, 255, 255, 0.637);
+    width: 100%;
+    height: 15rem;
+    position: relative;
+    top: 2600px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .links {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 1rem;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    cursor: pointer;
+}
+
+footer .socials {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    width: 33%;
+    padding: 1rem;
+    gap: 10px;
+}
+
+footer .contact {
+    padding: 1rem;
+    width: fit-content;
+    text-align: end;
+    width: 33%;
+}
+
+
+@media screen and (min-width:768px) {
+    .imgbox1 {
+        width:35rem;
+        height: 25rem;
+        top: 35vh;
+        border: 10px solid white;
+    }
+
+    .bluebox {
+        width: 50vw;
+    }
+
+    .welcome {
+        top: 30%;
+    }
+
+    .welcome-text {
+        top: 40%;
+    }
+
+    .section2 {
+        margin-top: 5rem;
+        min-height: 80vh;
+    }
+
+    .imgbox2 {
+        width:35rem;
+        height: 25rem;
+        border: 10px solid white;
+    }
+
+    .section2 .text {
+        right: 10%;
+        left: 40%;
+    }
+
+    .section3 {
+        top: 1600px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10rem;
+    }
+    .section3 #carousel {
+        width: 50%;
+
+    }
+   
+}
